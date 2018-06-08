@@ -1,5 +1,6 @@
 package xute.progressdotsSample;
 
+import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         progressDotView = findViewById(R.id.dotProgressView);
+        progressDotView.setActiveDotColor(Color.parseColor("#009988"));
     }
 
     public void moveToNext(View view) {

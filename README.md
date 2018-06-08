@@ -1,4 +1,4 @@
-## ProgressDotView [![](https://jitpack.io/v/bxute/ClippedSlideView.svg)](https://jitpack.io/#bxute/ClippedSlideView)
+## ProgressDotView [![](https://jitpack.io/v/bxute/ProgressDots.svg)](https://jitpack.io/#bxute/ProgressDots)
 
 An android view which shows the current position of progress with a nicely animated dots and transitioning colors.
 
@@ -10,6 +10,100 @@ An android view which shows the current position of progress with a nicely anima
  - On Any page which has fixed set of steps
 
 ### How to use this library
+---
+**For Gradle**
+
+ 1. Add the JitPack repository to your build file(project level)
+ ```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+2. Add the dependency
+```
+dependencies {
+	        implementation 'com.github.bxute:ProgressDots:v1.0'
+	}
+```
+
+---
+
+**For Maven**
+1. Add the JitPack repository to your build file(project level)
+```
+<repositories>
+	<repository>
+		<id>jitpack.io</id>
+		 <url>https://jitpack.io</url>
+	</repository>
+</repositories>
+ ```
+ 
+ 2. Add the dependency
+ ```
+<dependency>
+	 <groupId>com.github.bxute</groupId>
+	 <artifactId>ProgressDots</artifactId>
+	 <version>v1.0</version>
+</dependency>
+```
+
+---
+
+**For sbt**
+1. Add the JitPack repository to your build file(project level)
+```
+ resolvers += "jitpack" at "https://jitpack.io"     
+```
+
+2. Add the dependency
+```
+libraryDependencies += "com.github.bxute" % "ProgressDots" % "v1.0"	
+```
+
+Now add to your layout file
+
+```xml
+ <xute.progressdot.ProgressDotView xmlns:app="http://schemas.android.com/apk/res/xute.progressdotsSample"
+        android:id="@+id/dotProgressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:activeDotColor="#095199"
+        app:dotCount="6"
+        app:inActiveDotColor="#b9b9b9"
+        app:largeDotRadius="6dp"
+        app:smallDotRadius="4dp"
+        app:spaceBetweenDots="4dp"
+        app:switchTimeInMillis="1000" />
+```
+
+Then you need to call `moveToNext()` method to move the active dot 1 step forward.
+Like:
+```java
+progressDotView = findViewById(R.id.dotProgressView);
+progressDotView.moveToNext();
+```
+
+### Customizing View
+You can customize this view using a set of attributes and member methods.
+
+**Change Active Dot color**
+
+Using XML
+```xml
+ app:activeDotColor="#095199"
+```
+Using JAVA
+```java
+progressDotView.setActiveDotColor(Color.parseColor("#009988"));
+```
+
+Similarly you can call other methods:
+`setDotCount(int)` `setActiveDotColor(int)` `setInactiveDotColor(int)` `setSmallDotRadiusInDp(int)` etc.
 
 
 ### Contributions
