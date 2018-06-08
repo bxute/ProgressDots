@@ -1,12 +1,13 @@
 ## ProgressDotView [![](https://jitpack.io/v/bxute/ClippedSlideView.svg)](https://jitpack.io/#bxute/ClippedSlideView)
 
 An android view which shows the current position of progress with a nicely animated dots and transitioning colors.
+
+<img src="https://user-images.githubusercontent.com/10809719/41149642-bcc1df50-6b29-11e8-9e76-fc17f3e926d3.gif" width="360px" height="640px">
+
 **Use Case:** It can be used:
  - On onboarding pages for showing current position
  - On Sliding banners
  - On Any page which has fixed set of steps
-
-<img src="https://user-images.githubusercontent.com/10809719/41149642-bcc1df50-6b29-11e8-9e76-fc17f3e926d3.gif" width="360px" height="640px">
 
 ### How to use this library
 
