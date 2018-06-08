@@ -67,7 +67,7 @@ libraryDependencies += "com.github.bxute" % "ProgressDots" % "v1.0"
 
 ---
 
-Now add to your layout file
+3.Now add to your layout file
 
 ```xml
  <xute.progressdot.ProgressDotView xmlns:app="http://schemas.android.com/apk/res/xute.progressdotsSample"
@@ -84,7 +84,7 @@ Now add to your layout file
         app:switchTimeInMillis="1000" />
 ```
 
-Then you need to call `moveToNext()` method to move the active dot 1 step forward.
+4.Then you need to call `moveToNext()` method to move the active dot 1 step forward.
 Like:
 ```java
 progressDotView = findViewById(R.id.dotProgressView);
