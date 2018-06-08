@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressDotView">
+        <attr name="activeDotColor" format="color"/>
+        <attr name="inActiveDotColor" format="color"/>
+        <attr name="smallDotRadius" format="dimension"/>
+        <attr name="largeDotRadius" format="dimension"/>
+        <attr name="spaceBetweenDots" format="dimension"/>
+        <attr name="switchTimeInMillis" format="integer"/>
+        <attr name="dotCount" format="integer"/>
+    </declare-styleable>
+</resources>
