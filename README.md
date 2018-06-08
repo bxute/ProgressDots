@@ -24,9 +24,10 @@ allprojects {
 ```
 2. Add the dependency
 ```
-dependencies {
-	        implementation 'com.github.bxute:ProgressDots:v1.0'
-	}
+dependencies 
+{
+ implementation 'com.github.bxute:ProgressDots:v1.0'
+}
 ```
 
 ---
@@ -63,6 +64,8 @@ dependencies {
 ```
 libraryDependencies += "com.github.bxute" % "ProgressDots" % "v1.0"	
 ```
+
+---
 
 Now add to your layout file
 
@@ -103,7 +106,10 @@ progressDotView.setActiveDotColor(Color.parseColor("#009988"));
 ```
 
 Similarly you can call other methods:
-`setDotCount(int)` `setActiveDotColor(int)` `setInactiveDotColor(int)` `setSmallDotRadiusInDp(int)` etc.
+`setDotCount(int)`
+`setActiveDotColor(int)`
+`setInactiveDotColor(int)`
+`setSmallDotRadiusInDp(int)` etc.
 
 
 ### Contributions
