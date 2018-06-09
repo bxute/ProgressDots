@@ -26,7 +26,7 @@ allprojects {
 ```
 dependencies 
 {
- implementation 'com.github.bxute:ProgressDots:v1.0'
+ implementation 'com.github.bxute:ProgressDots:v1.0.1'
 }
 ```
 
@@ -48,7 +48,7 @@ dependencies
 <dependency>
 	 <groupId>com.github.bxute</groupId>
 	 <artifactId>ProgressDots</artifactId>
-	 <version>v1.0</version>
+	 <version>v1.0.1</version>
 </dependency>
 ```
 
@@ -62,7 +62,7 @@ dependencies
 
 2. Add the dependency
 ```
-libraryDependencies += "com.github.bxute" % "ProgressDots" % "v1.0"	
+libraryDependencies += "com.github.bxute" % "ProgressDots" % "v1.0.1"	
 ```
 
 ---
