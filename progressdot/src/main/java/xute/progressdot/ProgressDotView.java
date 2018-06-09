@@ -92,7 +92,6 @@ public class ProgressDotView extends View {
             throw new IllegalArgumentException("There should be atleast 2 Dots");
         }
         this.mDotsCount = count;
-        Log.d("ViewD","count "+count);
         calculatedViewWidth = (count * 2 * mSmallDotRadius) + (count + 1) * mSpaceBetweenDots;
         calculatedViewHeight = 2 * mSpaceBetweenDots + mLargeDotRadius;
         radiuses = new int[count];
@@ -140,6 +139,18 @@ public class ProgressDotView extends View {
                 mActiveIndex++;
             } else {
                 mActiveIndex = 0;
+            }
+            startAnimating();
+        }
+    }
+
+    public void moveToBack(){
+        if (!animating) {
+            mLastActiveIndex = mActiveIndex;
+            if (mActiveIndex > 0) {
+                mActiveIndex--;
+            } else {
+                mActiveIndex = mDotsCount - 1 ;
             }
             startAnimating();
         }
