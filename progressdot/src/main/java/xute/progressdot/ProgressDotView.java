@@ -144,7 +144,7 @@ public class ProgressDotView extends View {
         }
     }
 
-    public void moveToBack(){
+    public void moveBack(){
         if (!animating) {
             mLastActiveIndex = mActiveIndex;
             if (mActiveIndex > 0) {
